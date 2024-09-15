@@ -51,7 +51,7 @@ Welcome to the Human Face Analysis project! This tool leverages cutting-edge mac
     ```
 
 3. Download the pre-trained model checkpoint from Google Drive:
-    [Download Checkpoint]([https://drive.google.com/uc?id=YOUR_CHECKPOINT_ID&export=download](https://drive.google.com/drive/folders/1k4I3GpkyRc3aXlhbPcJNlIBsyPUWZND1?usp=sharing))
+    [Download Checkpoint](https://drive.google.com/drive/folders/1k4I3GpkyRc3aXlhbPcJNlIBsyPUWZND1?usp=sharing)
 
 4. Move the downloaded checkpoint to the `checkpoint` folder:
     ```bash
