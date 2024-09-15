@@ -1,0 +1,47 @@
+data:
+  train_images: data/classification/images/train
+  val_images: data/classification/images/val
+  train_labels: data/classification/train_labels.csv
+  val_labels: data/classification/val_labels.csv
+  all_labels: data/classification/all_labels.csv
+  batch_size: 32
+
+transforms:
+  resize:
+    width: 256
+    height: 256
+
+  randomrotation:
+    degrees: 45
+
+  colorjitter:
+    brightness: 0.5
+    contrast: 0.5
+    saturation: 0.5
+    hue: 0.5
+
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+  cent_crop:
+    size: 224
+
+train:
+  checkpoint: checkpoint
+  num_epochs: 100
+  seed: 8325
+  learning_rate: 1.0e-4
+  log_path: tensorboard
+
+val:
+  num_epochs: 10
+
+
+
+
+
+
+
+  
+    
