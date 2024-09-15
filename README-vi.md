@@ -51,7 +51,7 @@ Chào mừng bạn đến với dự án Phân Tích Khuôn Mặt! Công cụ n�
     ```
 
 3. Tải mô hình đã được huấn luyện từ Google Drive:
-    [Tải Checkpoint](https://drive.google.com/uc?id=YOUR_CHECKPOINT_ID&export=download)
+    [Tải Checkpoint]([https://drive.google.com/uc?id=YOUR_CHECKPOINT_ID&export=download](https://drive.google.com/drive/folders/1k4I3GpkyRc3aXlhbPcJNlIBsyPUWZND1?usp=sharing))
 
 4. Di chuyển checkpoint đã tải vào thư mục `checkpoint`:
     ```bash
