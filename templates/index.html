@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Analysis</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-panel {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-panel {
+            background-color: #fff;
+            border-left: 1px solid #ccc;
+        }
+        video, img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <video id="video" controls autoplay></video>
+            <img id="image" style="display: none;">
+        </div>
+        <div class="right-panel">
+            <div class="controls">
+                <!-- <button onclick="startWebcam()">Webcam</button> -->
+                <input id="file-input" type="file" accept="image/*, video/*" onchange="loadMedia(event)">
+            </div>
+            <div id="face-info">
+                <h3>Face Analysis</h3>
+                <table id="face-table">
+                    <thead>
+                        <tr>
+                            <th>Face ID</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Emotion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Các dòng dữ liệu sẽ được thêm vào đây -->
+                    </tbody>
+                </table>
+                <button onclick="infer()">Infer</button> <!-- Nút Infer -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
