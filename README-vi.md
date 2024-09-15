@@ -2,7 +2,7 @@
 
 ## Language / Ngôn Ngữ
 
-- [English](README-en.md)      
+- [English](README.md)      
 - [Tiếng Việt](README-vi.md)
 
 
