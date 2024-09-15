@@ -55,6 +55,7 @@ Chào mừng bạn đến với dự án Phân Tích Khuôn Mặt! Công cụ n�
 
 4. Di chuyển checkpoint đã tải vào thư mục `checkpoint`:
     ```bash
+    mkdir checkpoint
     mv path/to/downloaded/checkpoint checkpoint/
     ```
 
