@@ -55,6 +55,7 @@ Welcome to the Human Face Analysis project! This tool leverages cutting-edge mac
 
 4. Move the downloaded checkpoint to the `checkpoint` folder:
     ```bash
+    mkdir checkpoint
     mv path/to/downloaded/checkpoint checkpoint/
     ```
 
