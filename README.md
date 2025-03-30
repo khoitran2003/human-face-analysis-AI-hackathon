@@ -21,6 +21,7 @@ Author:
 ## Overview
 
 Welcome to the Human Face Analysis project! This tool leverages cutting-edge machine learning and computer vision techniques to detect and analyze human faces in images or videos. Whether you're looking to detect emotions, estimate age, recognize gender, or extract facial features, this project has you covered.
+![diagram](diagram.png)
 
 ## Features
 
